@@ -1,2 +1,3 @@
+- Remove "Cache=Shared" from sqllite connection string, feature is obselete and discouraged - https://www.sqlite.org/sharedcache.html
 - Fix nullable properties warnings
 - Upgrade to .Net 8 using .Net Upgrade Assistant - .Net 7 is out of support and packages have known high severity vulnerabilities

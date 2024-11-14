@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var connection = new SqliteConnection("Data Source=DotNetInterview;Mode=Memory;Cache=Shared");
+var connection = new SqliteConnection("Data Source=DotNetInterview;Mode=Memory;");
 connection.Open();
 builder.Services.AddDbContext<DataContext>(options => options.UseSqlite(connection));
 

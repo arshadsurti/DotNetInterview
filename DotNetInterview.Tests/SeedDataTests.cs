@@ -11,7 +11,7 @@ namespace DotNetInterview.Tests
         [SetUp]
         public void Setup()
         {
-            var connection = new SqliteConnection("Data Source=DotNetInterview;Mode=Memory;Cache=Shared");
+            var connection = new SqliteConnection("Data Source=DotNetInterview;Mode=Memory;");
             connection.Open();
             var options = new DbContextOptionsBuilder<DataContext>()
                 .UseSqlite(connection)
