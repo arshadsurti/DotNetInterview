@@ -6,7 +6,7 @@ namespace DotNetInterview.Tests
 {
     public class SeedDataTests
     {
-        private DataContext _dataContext;
+        private DataContext? _dataContext;
 
         [SetUp]
         public void Setup()
@@ -22,7 +22,7 @@ namespace DotNetInterview.Tests
         [Test]
         public void Example_to_ensure_dbcontext_has_seed_data()
         {
-            Assert.That(_dataContext.Items.Count(), Is.EqualTo(3));
+            Assert.That(_dataContext?.Items?.Count(), Is.EqualTo(3));
         }
     }
 }
